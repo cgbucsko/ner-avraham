@@ -1,0 +1,14 @@
+{
+  "name": "ner-avraham",
+  "version": "1.0.0",
+  "description": "Webpage for Kollel Ner AVraham",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "CG Bucsko",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
