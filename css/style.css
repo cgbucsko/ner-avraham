@@ -20,6 +20,16 @@
     opacity: 1;
   }
 }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -74,7 +84,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 1fr 7fr 3fr;
   height: 100vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpg);
   background-size: cover;
@@ -85,8 +95,32 @@ body {
 }
 .header__btn {
   margin-left: 8rem;
-  animation: moveInBottom 1s ease-out 0.75s;
+  align-self: center;
+  animation: moveInBottom 1s ease-out 1s;
   animation-fill-mode: backwards;
+}
+
+.main-nav {
+  text-align: end;
+  margin: 2rem;
+  animation: moveInTop 1s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:link:hover, .main-nav li a:link:active,
+.main-nav li a:visited:hover,
+.main-nav li a:visited:active {
+  border-bottom: 2px solid #f6b93b;
 }
 
 /*# sourceMappingURL=style.css.map */

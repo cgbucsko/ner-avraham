@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 1fr 7fr 3fr;
   
   height: 100vh;
   background-image: linear-gradient(
@@ -18,7 +18,32 @@
 
   &__btn {
     margin-left: 8rem;
-    animation: moveInBottom 1s ease-out .75s;
+    align-self: center;
+    animation: moveInBottom 1s ease-out 1s;
     animation-fill-mode: backwards;
+  }
+}
+
+.main-nav {
+  text-align: end;
+  margin: 2rem;
+  animation: moveInTop 1s ease-out 1s;
+  animation-fill-mode: backwards;
+
+  li a:link,
+  li a:visited {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $color-primary;
+    }
   }
 }
