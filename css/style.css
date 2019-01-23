@@ -1,0 +1,88 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    text-shadow: 0 0 2rem #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 4px #000;
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  text-shadow: 0 0 4px #000;
+  margin-bottom: 12rem;
+}
+.heading-primary--left {
+  display: inline-block;
+  animation: moveInLeft 5s;
+}
+.heading-primary--right {
+  display: inline-block;
+  animation: moveInLeft 5s;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.header__text {
+  height: fit-content;
+}
+
+/*# sourceMappingURL=style.css.map */
