@@ -13,15 +13,7 @@ body {
     font-weight: 400;
     letter-spacing: 1.5rem;
     text-shadow: 0 0 4px #000;
-    margin-bottom: 12rem;
-
-    &--left {
-        display: inline-block;
-        animation: moveInLeft 5s;
-    }
-
-    &--right {
-        display: inline-block;
-        animation: moveInLeft 5s;
-    }
+    text-align: center;
+    display: block;
+    animation: opener 5s;
 }
