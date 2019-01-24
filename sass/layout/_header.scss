@@ -19,7 +19,7 @@
   &__btn {
     margin-left: 8rem;
     align-self: center;
-    animation: moveInBottom 1s ease-out 1s;
+    animation: moveInBottom 1s ease-out 3s;
     animation-fill-mode: backwards;
   }
 }
@@ -39,7 +39,7 @@
     letter-spacing: 3px;
     color: white;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+    transition: border-bottom 0.3s;
 
     &:hover,
     &:active {
