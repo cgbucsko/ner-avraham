@@ -66,6 +66,16 @@ body {
   animation: opener 5s;
 }
 
+.heading-secondary {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f3a70b;
+  letter-spacing: 0.6rem;
+  text-align: center;
+  border-bottom: 2px solid #f3a70b;
+}
+
 .btn:link, .btn:visited {
   color: #f6b93b;
   display: inline-block;
@@ -87,6 +97,7 @@ body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 }
 .header__text {
   align-self: center;
@@ -119,6 +130,38 @@ body {
 .main-nav li a:visited:hover,
 .main-nav li a:visited:active {
   border-bottom: 2px solid #f6b93b;
+}
+
+.section-mission {
+  background-color: #eee;
+  padding: 18rem 10rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "head head" "p1 video" "p2 video";
+  justify-items: center;
+}
+.section-mission .heading-secondary {
+  grid-area: head;
+  margin-bottom: 12rem;
+}
+.section-mission .p {
+  font-size: 2rem;
+  padding: 0 5rem;
+}
+.section-mission .p--1 {
+  grid-area: p1;
+  padding-bottom: 3rem;
+}
+.section-mission .p--2 {
+  grid-area: p2;
+}
+.section-mission .video {
+  grid-area: video;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

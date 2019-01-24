@@ -9,8 +9,10 @@
       rgba(0, 0, 0, 0.6)
     ),
     url(../../img/hero.jpg);
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 
   &__text {
     align-self: center;
@@ -43,7 +45,7 @@
 
     &:hover,
     &:active {
-      border-bottom: 2px solid $color-primary;
+      border-bottom: 2px solid $color-primary-light;
     }
   }
 }

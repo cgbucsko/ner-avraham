@@ -1,13 +1,13 @@
 .btn {
     &:link,
     &:visited {
-      color: $color-primary;
+      color: $color-primary-light;
       display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
       padding: .8rem;
-      border-bottom: 2px solid $color-primary;
+      border-bottom: 2px solid $color-primary-light;
       transition: all .6s;
     }
   

@@ -1,0 +1,39 @@
+.section-mission {
+    background-color: #eee;
+    padding: 18rem 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "head head"
+        "p1 video"
+        "p2 video";
+    justify-items: center;
+
+    .heading-secondary {
+        grid-area: head;
+        margin-bottom: 12rem;
+    }
+
+    .p {
+        font-size: 2rem;
+        padding: 0 5rem;
+
+        &--1 {
+            grid-area: p1;
+            padding-bottom: 3rem;
+        }
+
+        &--2 {
+            grid-area: p2;
+        }
+    }
+    
+    .video {
+        grid-area: video;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+}
