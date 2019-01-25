@@ -13,14 +13,14 @@
     }
   }
   
-  @keyframes moveInBottom {
+  @keyframes moveInLeft {
     0% {
       opacity: 0;
-      transform: translateY(3rem);
+      transform: translateX(-8rem);
     }
   
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
     }
   }

@@ -5,8 +5,9 @@
       display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      padding: .8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: .8rem 0;
       border-bottom: 2px solid $color-primary-light;
       transition: all .6s;
     }

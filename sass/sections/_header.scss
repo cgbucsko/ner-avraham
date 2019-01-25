@@ -9,7 +9,6 @@
       rgba(0, 0, 0, 0.6)
     ),
     url(../../img/hero.jpg);
-  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -21,7 +20,7 @@
   &__btn {
     margin-left: 8rem;
     align-self: center;
-    animation: moveInBottom 1s ease-out 3s;
+    animation: moveInLeft 1s ease-out 3s;
     animation-fill-mode: backwards;
   }
 }
@@ -35,16 +34,18 @@
   li a:link,
   li a:visited {
     text-decoration: none;
-    padding: 2rem;
+    margin: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+    transition: all 0.3s;
 
     &:hover,
     &:active {
+      color: $color-primary-light;
       border-bottom: 2px solid $color-primary-light;
     }
   }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css"/>
@@ -18,9 +18,9 @@
         <nav>
             <ul class="main-nav">
                 <li>
-                    <a href="#">Our Mission</a>
-                    <a href="#">About Us</a>
+                    <a href="#mission">Our Mission</a>
                     <a href="#">Schedule</a>
+                    <a href="#">About Us</a>
                     <a href="#">Donate</a>
                 </li>
             </ul>
@@ -29,24 +29,53 @@
             <h1 class="heading-primary">Ner Avraham</h1>
         </div>
         <div class="header__btn">
-            <a href="#" class="btn">Become a supporter</a>
+            <a href="#" class="btn">Become a partner</a>
         </div>        
     </header>
 
     <main>
-        <section class="section-mission">
-            <h2 class="heading-secondary">&mdash; Bringing life to the neighborhood &mdash;</h2>
-            <p class="p p--1">Lorem ipsum dolor sit amet, nec ea brute nonumes consequuntur, in maluisset scribentur vel, pertinax senserit repudiandae te vix. Cu inermis suscipit dissentiunt duo. Ne duo iusto homero doctus.</p>
-            <p class="p p--2">Mei ad cetero inimicus. Ex sed liber blandit quaerendum. Sit ne quot soleat, ad eum duis antiopam appellantur. Decore cetero eu est, et dicit utinam diceret est. Cu pro viderer mediocrem. Sea postea platonem id, ius aeque officiis adipisci ad.</p>
-            <video 
-                src="img/video.mp4"
-                width="500" 
-                height="281"
-                controls
-                class="video"></video>
+        <section class="section-mission" id="mission">
+            <h2 class="heading-secondary">&mdash; Let there be light &mdash;</h2>
+            <div class="features">
+                <ul class="features__list">
+                    <li>
+                        <ion-icon name="people" class="features__icon"></ion-icon>
+                        <p class="features__text">One-on-one chavrusa learning</p>
+                    </li>
+                    <li>
+                        <ion-icon name="chatboxes" class="features__icon"></ion-icon>
+                        <p class="features__text">Engaging Torah classes given in English</p>
+                    </li>
+                    <li>
+                        <ion-icon name="map" class="features__icon"></ion-icon>
+                        <p class="features__text">
+                            Centrally located
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <div class="info-box__text">
+                    <p class="p p--1">Lorem ipsum dolor sit amet, nec ea brute nonumes consequuntur, in maluisset scribentur vel, pertinax senserit repudiandae te vix. Cu inermis suscipit dissentiunt duo. Ne duo iusto homero doctus.</p>
+                    <p class="p p--2">Mei ad cetero inimicus. Ex sed liber blandit quaerendum. Sit ne quot soleat, ad eum duis antiopam appellantur. Decore cetero eu est, et dicit utinam diceret est. Cu pro viderer mediocrem. Sea postea platonem id, ius aeque officiis adipisci ad.</p>
+                </div>
+                <video 
+                    src="img/video.mp4"
+                    width="500" 
+                    height="281"
+                    controls
+                    class="video">
+                </video>
+            </div>
+            
+        </section>
+        <section class="section-schedule" id="schedule">
+            <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2>
         </section>
 
 
     </main>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 </html>
