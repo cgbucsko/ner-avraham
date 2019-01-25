@@ -143,6 +143,9 @@ body {
   -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
   clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
+.section-mission .heading-secondary {
+  width: 100%;
+}
 .section-mission .features {
   padding: 8rem 5rem;
 }
@@ -202,7 +205,81 @@ body {
   background-color: #303030;
   margin-top: -8rem;
   padding: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-main {
+  margin-top: 8rem;
+  display: flex;
+}
+.schedule-main > * {
+  flex: 1 1 0;
+}
+
+.schedule-grid {
   display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: ". community kollel" "t1 chumash halacha" "t2 navi halacha" "t3 mishna halacha" "t4 chavrusa chavrusa" "t5 mincha mincha" "t6 . gemara" "t7 . mussar";
+  grid-gap: 1.5rem;
+  justify-content: center;
+  color: #fcfcfc;
+}
+
+.sch__time {
+  color: #f6b93b;
+}
+.sch__time--1 {
+  grid-area: t1;
+}
+.sch__time--2 {
+  grid-area: t2;
+}
+.sch__time--3 {
+  grid-area: t3;
+}
+.sch__time--4 {
+  grid-area: t4;
+}
+.sch__time--5 {
+  grid-area: t5;
+}
+.sch__time--6 {
+  grid-area: t6;
+}
+.sch__time--7 {
+  grid-area: t7;
+}
+.sch__chumash {
+  grid-area: chumash;
+}
+.sch__navi {
+  grid-area: navi;
+}
+.sch__mishna {
+  grid-area: mishna;
+}
+.sch__community {
+  grid-area: community;
+}
+.sch__kollel {
+  grid-area: kollel;
+}
+.sch__mincha {
+  grid-area: mincha;
+}
+.sch__halacha {
+  grid-area: halacha;
+}
+.sch__gemara {
+  grid-area: gemara;
+}
+.sch__chavrusa {
+  grid-area: chavrusa;
+}
+.sch__mussar {
+  grid-area: mussar;
 }
 
 /*# sourceMappingURL=style.css.map */

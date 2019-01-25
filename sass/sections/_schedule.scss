@@ -2,5 +2,110 @@
     background-color: $color-dark-gray-1;
     margin-top: -8rem;
     padding: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-main {
+    margin-top: 8rem;
+    display: flex;
+
+    & > * {
+        flex: 1 1 0;
+    }
+}
+
+.schedule-grid {
     display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        ". community kollel"
+        "t1 chumash halacha"
+        "t2 navi halacha"
+        "t3 mishna halacha"
+        "t4 chavrusa chavrusa"
+        "t5 mincha mincha"
+        "t6 . gemara"
+        "t7 . mussar";
+    grid-gap: 1.5rem;
+    justify-content: center;
+    // align-items: center;
+
+    color: $color-light-gray-1;
+}
+
+.sch {
+
+    &__time {
+        color: $color-primary-light;
+
+        &--1 {
+            grid-area: t1;
+        }
+    
+        &--2 {
+            grid-area: t2;
+        }
+    
+        &--3 {
+            grid-area: t3;
+        }
+    
+        &--4 {
+            grid-area: t4;
+        }
+    
+        &--5 {
+            grid-area: t5;
+        }
+    
+        &--6 {
+            grid-area: t6;
+        }
+    
+        &--7 {
+            grid-area: t7;
+        }
+    }
+
+    &__chumash {
+        grid-area: chumash;
+    }
+
+    &__navi {
+        grid-area: navi;
+    }
+
+    &__mishna {
+        grid-area: mishna;
+    }
+
+    &__community {
+        grid-area: community;
+    }
+
+    &__kollel {
+        grid-area: kollel;
+    }
+
+    &__mincha {
+        grid-area: mincha;
+    }
+
+    &__halacha {
+        grid-area: halacha;
+    }
+
+    &__gemara {
+        grid-area: gemara;
+    }
+
+    &__chavrusa {
+        grid-area: chavrusa;
+    }
+
+    &__mussar {
+        grid-area: mussar;
+    }
 }

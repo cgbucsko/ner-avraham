@@ -1,10 +1,14 @@
 .section-mission {
-    background-color: $color-background-2;
+    background-color: $color-light-gray-1;
     padding: 8rem 15rem;
     display: flex;
     flex-direction: column;
     -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
     clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+
+    .heading-secondary {
+        width: 100%;
+    }
 
     .features {
         padding: 8rem 5rem;

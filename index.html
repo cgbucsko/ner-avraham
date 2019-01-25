@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
 
     <title>Ner Avraham</title>
@@ -35,19 +36,33 @@
 
     <main>
         <section class="section-mission" id="mission">
-            <h2 class="heading-secondary">&mdash; Let there be light &mdash;</h2>
+            <h2 class="heading-secondary">
+                <span data-aos="fade-left">&mdash; </span>
+                Let there be light
+                <span data-aos="fade-right"> &mdash;</span></h2>
             <div class="features">
                 <ul class="features__list">
                     <li>
-                        <ion-icon name="people" class="features__icon"></ion-icon>
+                        <ion-icon 
+                            data-aos="flip-left"
+                            name="people" 
+                            class="features__icon"></ion-icon>
                         <p class="features__text">One-on-one chavrusa learning</p>
                     </li>
                     <li>
-                        <ion-icon name="chatboxes" class="features__icon"></ion-icon>
+                        <ion-icon 
+                            data-aos="flip-left"
+                            data-aos-delay="200"
+                            name="chatboxes" 
+                            class="features__icon"></ion-icon>
                         <p class="features__text">Engaging Torah classes given in English</p>
                     </li>
                     <li>
-                        <ion-icon name="map" class="features__icon"></ion-icon>
+                        <ion-icon 
+                            data-aos="flip-left"
+                            data-aos-delay="400" 
+                            name="map" 
+                            class="features__icon"></ion-icon>
                         <p class="features__text">
                             Centrally located
                         </p>
@@ -71,11 +86,39 @@
         </section>
         <section class="section-schedule" id="schedule">
             <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2>
+            <div class="schedule-main">
+                <div class="schedule-info">
+
+                </div>
+                <div class="schedule-grid">
+                    <p class="sch__time--1">9:30 - 10:10</p>
+                    <p class="sch__time--2">10:15 - 10:55</p>
+                    <p class="sch__time--3">11:00 - 11:30</p>
+                    <p class="sch__time--4">1:00 - 2:00</p>
+                    <p class="sch__time--5">2:00</p>
+                    <p class="sch__time--6">3:15 - 5:45</p>
+                    <p class="sch__time--7">5:45 - 6:00</p>
+                    <p class="sch__community">Public Classes</p>
+                    <p class="sch__kollel">Kollel Schedule</p>
+                    <p class="sch__chumash">Chumash</p>
+                    <p class="sch__navi">Navi</p>
+                    <p class="sch__mishna">Mishna</p>
+                    <p class="sch__chavrusa">One-on-one chavrusa learning between community and kollel members</p>
+                    <p class="sch__mincha">Mincha</p>                 
+                    <p class="sch__halacha">Morning learning session - Halacha</p>                 
+                    <p class="sch__gemara">Afternoon learning session - Gemara</p>                 
+                    <p class="sch__mussar">Mussar session</p>                 
+                </div>
+            </div>
         </section>
 
 
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 </html>
