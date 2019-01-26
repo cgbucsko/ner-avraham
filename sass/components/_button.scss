@@ -9,11 +9,15 @@
       letter-spacing: 1px;
       padding: .8rem 0;
       border-bottom: 2px solid $color-primary-light;
-      transition: all .6s;
+      transition: all .4s;
     }
   
-    &:hover,
+    &:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 0 2rem $color-secondary, 0 0 3rem $color-secondary, 0 0 4rem $color-secondary, 0 0 5rem $color-secondary, 0 0 6rem $color-secondary;
+    }
+
     &:active {
-      text-shadow: 0 0 2rem $color-secondary, 0 0 3rem $color-secondary, 0 0 4rem $color-secondary;
+      transform: translateY(0);
     }
   }

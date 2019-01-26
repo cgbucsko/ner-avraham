@@ -85,10 +85,14 @@ body {
   letter-spacing: 1px;
   padding: 0.8rem 0;
   border-bottom: 2px solid #f6b93b;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
-.btn:hover, .btn:active {
-  text-shadow: 0 0 2rem #fff16e, 0 0 3rem #fff16e, 0 0 4rem #fff16e;
+.btn:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 0 2rem #fff16e, 0 0 3rem #fff16e, 0 0 4rem #fff16e, 0 0 5rem #fff16e, 0 0 6rem #fff16e;
+}
+.btn:active {
+  transform: translateY(0);
 }
 
 .header {
