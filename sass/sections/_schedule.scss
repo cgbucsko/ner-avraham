@@ -1,44 +1,57 @@
-.section-schedule {
-    background-color: $color-dark-gray-1;
-    margin-top: -8rem;
-    padding: 15rem;
-    display: flex;
-    flex-direction: column;
+.section-wrapper--schedule {
+    background-image: linear-gradient(
+        to bottom,
+        $color-dark-gray-1,
+        $color-light-gray-1
+    );
 }
 
-.schedule-main {
-    margin-top: 8rem;
-    display: flex;
-
-    & > * {
-        flex: 1 1 0;
-    }
+.section-schedule {
+    background-color: $color-dark-gray-1;
+    padding: 7rem;
+    -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .schedule-grid {
+    padding: 4rem 20%;
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
         ". community kollel"
         "t1 chumash halacha"
-        "t2 navi halacha"
-        "t3 mishna halacha"
+        "t2 navi ."
+        "t3 mishna empty2"
         "t4 chavrusa chavrusa"
         "t5 mincha mincha"
         "t6 . gemara"
-        "t7 . mussar";
-    grid-gap: 1.5rem;
+        "t7 empty mussar";
+    // grid-gap: 1.5rem;
     justify-content: center;
-    // align-items: center;
+    text-align: center;
 
     color: $color-light-gray-1;
 }
 
+.row--a {
+    background: $color-dark-gray-2;
+}
+
 .sch {
+
+    padding: 1.5rem;
+
+    &--title {
+        color: $color-primary-light;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
 
     &__time {
         color: $color-primary-light;
+        font-size: 1.8rem;
 
         &--1 {
             grid-area: t1;
@@ -107,5 +120,13 @@
 
     &__mussar {
         grid-area: mussar;
+    }
+
+    &__empty {
+        grid-area: empty;
+    }
+
+    &__empty2 {
+        grid-area: empty2;
     }
 }

@@ -135,6 +135,10 @@ body {
   border-bottom: 2px solid #f6b93b;
 }
 
+.section-wrapper--mission {
+  background: #303030;
+}
+
 .section-mission {
   background-color: #fcfcfc;
   padding: 8rem 15rem;
@@ -201,34 +205,44 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.section-schedule {
-  background-color: #303030;
-  margin-top: -8rem;
-  padding: 15rem;
-  display: flex;
-  flex-direction: column;
+.section-wrapper--schedule {
+  background-image: linear-gradient(to bottom, #303030, #fcfcfc);
 }
 
-.schedule-main {
-  margin-top: 8rem;
-  display: flex;
-}
-.schedule-main > * {
-  flex: 1 1 0;
+.section-schedule {
+  background-color: #303030;
+  padding: 7rem;
+  -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .schedule-grid {
+  padding: 4rem 20%;
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
   grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: ". community kollel" "t1 chumash halacha" "t2 navi halacha" "t3 mishna halacha" "t4 chavrusa chavrusa" "t5 mincha mincha" "t6 . gemara" "t7 . mussar";
-  grid-gap: 1.5rem;
+  grid-template-areas: ". community kollel" "t1 chumash halacha" "t2 navi ." "t3 mishna empty2" "t4 chavrusa chavrusa" "t5 mincha mincha" "t6 . gemara" "t7 empty mussar";
   justify-content: center;
+  text-align: center;
   color: #fcfcfc;
 }
 
+.row--a {
+  background: #262626;
+}
+
+.sch {
+  padding: 1.5rem;
+}
+.sch--title {
+  color: #f6b93b;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
 .sch__time {
   color: #f6b93b;
+  font-size: 1.8rem;
 }
 .sch__time--1 {
   grid-area: t1;
@@ -280,6 +294,12 @@ body {
 }
 .sch__mussar {
   grid-area: mussar;
+}
+.sch__empty {
+  grid-area: empty;
+}
+.sch__empty2 {
+  grid-area: empty2;
 }
 
 /*# sourceMappingURL=style.css.map */

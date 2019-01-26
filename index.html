@@ -20,7 +20,7 @@
             <ul class="main-nav">
                 <li>
                     <a href="#mission">Our Mission</a>
-                    <a href="#">Schedule</a>
+                    <a href="#schedule">Schedule</a>
                     <a href="#">About Us</a>
                     <a href="#">Donate</a>
                 </li>
@@ -35,83 +35,81 @@
     </header>
 
     <main>
-        <section class="section-mission" id="mission">
-            <h2 class="heading-secondary">
-                <span data-aos="fade-left">&mdash; </span>
-                Let there be light
-                <span data-aos="fade-right"> &mdash;</span></h2>
-            <div class="features">
-                <ul class="features__list">
-                    <li>
-                        <ion-icon 
-                            data-aos="flip-left"
-                            name="people" 
-                            class="features__icon"></ion-icon>
-                        <p class="features__text">One-on-one chavrusa learning</p>
-                    </li>
-                    <li>
-                        <ion-icon 
-                            data-aos="flip-left"
-                            data-aos-delay="200"
-                            name="chatboxes" 
-                            class="features__icon"></ion-icon>
-                        <p class="features__text">Engaging Torah classes given in English</p>
-                    </li>
-                    <li>
-                        <ion-icon 
-                            data-aos="flip-left"
-                            data-aos-delay="400" 
-                            name="map" 
-                            class="features__icon"></ion-icon>
-                        <p class="features__text">
-                            Centrally located
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="info-box">
-                <div class="info-box__text">
-                    <p class="p p--1">Lorem ipsum dolor sit amet, nec ea brute nonumes consequuntur, in maluisset scribentur vel, pertinax senserit repudiandae te vix. Cu inermis suscipit dissentiunt duo. Ne duo iusto homero doctus.</p>
-                    <p class="p p--2">Mei ad cetero inimicus. Ex sed liber blandit quaerendum. Sit ne quot soleat, ad eum duis antiopam appellantur. Decore cetero eu est, et dicit utinam diceret est. Cu pro viderer mediocrem. Sea postea platonem id, ius aeque officiis adipisci ad.</p>
+        <div class="section-wrapper--mission">
+            <section class="section-mission" id="mission">
+                <h2 data-aos="zoom-in" class="heading-secondary">&mdash; Let there be light &mdash;</h2>
+                <div class="features">
+                    <ul class="features__list">
+                        <li>
+                            <ion-icon 
+                                data-aos="flip-left"
+                                name="people" 
+                                class="features__icon"></ion-icon>
+                            <p class="features__text">One-on-one chavrusa learning</p>
+                        </li>
+                        <li>
+                            <ion-icon 
+                                data-aos="flip-left"
+                                data-aos-delay="100"
+                                name="chatboxes" 
+                                class="features__icon"></ion-icon>
+                            <p class="features__text">Engaging Torah classes given in English</p>
+                        </li>
+                        <li>
+                            <ion-icon 
+                                data-aos="flip-left"
+                                data-aos-delay="200" 
+                                name="map" 
+                                class="features__icon"></ion-icon>
+                            <p class="features__text">
+                                Centrally located
+                            </p>
+                        </li>
+                    </ul>
                 </div>
-                <video 
-                    src="img/video.mp4"
-                    width="500" 
-                    height="281"
-                    controls
-                    class="video">
-                </video>
-            </div>
-            
-        </section>
-        <section class="section-schedule" id="schedule">
-            <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2>
-            <div class="schedule-main">
-                <div class="schedule-info">
-
+                <div class="info-box">
+                    <div class="info-box__text">
+                        <p class="p p--1">Lorem ipsum dolor sit amet, nec ea brute nonumes consequuntur, in maluisset scribentur vel, pertinax senserit repudiandae te vix. Cu inermis suscipit dissentiunt duo. Ne duo iusto homero doctus.</p>
+                        <p class="p p--2">Mei ad cetero inimicus. Ex sed liber blandit quaerendum. Sit ne quot soleat, ad eum duis antiopam appellantur. Decore cetero eu est, et dicit utinam diceret est. Cu pro viderer mediocrem. Sea postea platonem id, ius aeque officiis adipisci ad.</p>
+                    </div>
+                    <video 
+                        src="img/video.mp4"
+                        width="500" 
+                        height="281"
+                        controls
+                        class="video">
+                    </video>
                 </div>
+            </section>
+        </div>
+        
+        <div class="section-wrapper--schedule">
+            <section class="section-schedule" id="schedule">
+                <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2>
+                
                 <div class="schedule-grid">
-                    <p class="sch__time--1">9:30 - 10:10</p>
-                    <p class="sch__time--2">10:15 - 10:55</p>
-                    <p class="sch__time--3">11:00 - 11:30</p>
-                    <p class="sch__time--4">1:00 - 2:00</p>
-                    <p class="sch__time--5">2:00</p>
-                    <p class="sch__time--6">3:15 - 5:45</p>
-                    <p class="sch__time--7">5:45 - 6:00</p>
-                    <p class="sch__community">Public Classes</p>
-                    <p class="sch__kollel">Kollel Schedule</p>
-                    <p class="sch__chumash">Chumash</p>
-                    <p class="sch__navi">Navi</p>
-                    <p class="sch__mishna">Mishna</p>
-                    <p class="sch__chavrusa">One-on-one chavrusa learning between community and kollel members</p>
-                    <p class="sch__mincha">Mincha</p>                 
-                    <p class="sch__halacha">Morning learning session - Halacha</p>                 
-                    <p class="sch__gemara">Afternoon learning session - Gemara</p>                 
-                    <p class="sch__mussar">Mussar session</p>                 
+                    <p data-aos="fade-right" class="sch sch__time sch__time--1 row--a">9:30 - 10:10</p>
+                    <p data-aos="fade-left" class="sch sch__time sch__time--2">10:15 - 10:55</p>
+                    <p data-aos="fade-right" class="sch sch__time sch__time--3 row--a">11:00 - 11:30</p>
+                    <p data-aos="fade-left" class="sch sch__time sch__time--4">1:00 - 2:00</p>
+                    <p data-aos="fade-right" class="sch sch__time sch__time--5 row--a">2:00</p>
+                    <p data-aos="fade-left" class="sch sch__time sch__time--6">3:15 - 5:45</p>
+                    <p data-aos="fade-right" class="sch sch__time sch__time--7 row--a">5:45 - 6:00</p>
+                    <p class="sch sch__community sch--title">Public Classes</p>
+                    <p class="sch sch__kollel sch--title">Kollel Schedule</p>
+                    <p data-aos="fade-right" class="sch sch__chumash row--a">Chumash</p>
+                    <p data-aos="fade-left" class="sch sch__navi">Navi</p>
+                    <p data-aos="fade-right" class="sch sch__mishna row--a">Mishna</p>
+                    <p data-aos="fade-left" class="sch sch__chavrusa">One-on-one chavrusa learning between community and kollel members</p>
+                    <p data-aos="fade-right" class="sch sch__mincha row--a">Mincha</p>                 
+                    <p data-aos="fade-right" class="sch sch__halacha row--a">Morning learning session - Halacha</p>                 
+                    <p data-aos="fade-left" class="sch sch__gemara">Afternoon learning session - Gemara</p>                 
+                    <p data-aos="fade-right" class="sch sch__mussar row--a">Mussar session</p>   
+                    <p data-aos="fade-right" class="sch sch__empty row--a"> </p>         
+                    <p data-aos="fade-right" class="sch sch__empty2 row--a"> </p>             
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
     </main>
 
