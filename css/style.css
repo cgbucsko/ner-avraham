@@ -216,8 +216,6 @@ body {
 .section-schedule {
   background-color: #303030;
   padding: 7rem;
-  -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
-  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .schedule-grid {
@@ -304,6 +302,61 @@ body {
 }
 .sch__empty2 {
   grid-area: empty2;
+}
+
+.section-testimonials {
+  position: relative;
+  display: grid;
+  grid-template: 1fr 1fr/repeat(4, 1fr);
+}
+
+.photo-container {
+  width: 25vw;
+  height: 33vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.testimonials-photo {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  transform: scale(1.15);
+  transition: all 0.2s;
+}
+.testimonials-photo:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+.testimonials-photo:hover + .testimonials__quote {
+  visibility: visible;
+  opacity: 1;
+}
+
+.quote-mark {
+  position: absolute;
+  color: white;
+  font-size: 16rem;
+  top: -9rem;
+  left: -7rem;
+  height: auto;
+}
+
+.testimonials__quote {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
