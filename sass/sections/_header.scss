@@ -1,4 +1,5 @@
 .header {
+  
   display: grid;
   grid-template-rows: 1fr 7fr 3fr;
   
@@ -26,13 +27,16 @@
 }
 
 .main-nav {
+  width: 100%;
   text-align: end;
-  margin: 2rem;
+  margin: 2rem 0;
   animation: moveInTop 1s ease-out 1s;
   animation-fill-mode: backwards;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 
-  li a:link,
-  li a:visited {
+  .link {
     text-decoration: none;
     margin: 2rem;
     padding-bottom: 1rem;
@@ -43,10 +47,10 @@
     border-bottom: 2px solid transparent;
     transition: all 0.3s;
 
-    &:hover,
-    &:active {
+    &:hover {
       color: $color-primary-light;
       border-bottom: 2px solid $color-primary-light;
+      cursor: pointer;
     }
   }
 }

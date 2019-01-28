@@ -18,12 +18,10 @@
     <header class="header">
         <nav>
             <ul class="main-nav">
-                <li>
-                    <a href="#mission">Our Mission</a>
-                    <a href="#schedule">Schedule</a>
-                    <a href="#">Donate</a>
-                    <a href="#">Contact</a>
-                </li>
+                <li class="link" data-block="mission">Our Mission</a>
+                <li class="link" data-block="schedule">Schedule</a>
+                <li class="link" data-block="donate">Donate</a>
+                <li class="link" data-block="">Contact</a>
             </ul>
         </nav>
         <div class="header__text">
@@ -85,8 +83,7 @@
         
         <div class="section-wrapper--schedule">
             <section class="section-schedule" id="schedule">
-                <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2>
-                
+                <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2> 
                 <div class="schedule-grid">
                     <p data-aos="fade-right" class="sch sch__time sch__time--1 row--a">9:30 - 10:10</p>
                     <p data-aos="fade-left" class="sch sch__time sch__time--2">10:15 - 10:55</p>
@@ -110,6 +107,7 @@
                 </div>
             </section>
         </div>
+
         <section class="section-testimonials">
             <div class="photo-container">
                 <img src="./img/sample1.jpg" alt="sample" class="testimonials-photo">
@@ -141,6 +139,11 @@
             </div>
         </section>
 
+        <section class="section-donate" id="donate">
+            <h2 class="heading-secondary">&mdash; Become a supporter &mdash;</h2>
+
+        </section>
+
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -148,5 +151,6 @@
         AOS.init();
     </script>
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

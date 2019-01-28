@@ -115,13 +115,16 @@ body {
 }
 
 .main-nav {
+  width: 100%;
   text-align: end;
-  margin: 2rem;
+  margin: 2rem 0;
   animation: moveInTop 1s ease-out 1s;
   animation-fill-mode: backwards;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav .link {
   text-decoration: none;
   margin: 2rem;
   padding-bottom: 1rem;
@@ -132,11 +135,10 @@ body {
   border-bottom: 2px solid transparent;
   transition: all 0.3s;
 }
-.main-nav li a:link:hover, .main-nav li a:link:active,
-.main-nav li a:visited:hover,
-.main-nav li a:visited:active {
+.main-nav .link:hover {
   color: #f6b93b;
   border-bottom: 2px solid #f6b93b;
+  cursor: pointer;
 }
 
 .section-wrapper--mission {
@@ -352,7 +354,7 @@ body {
   color: white;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s;
+  transition: all 0.3s;
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
