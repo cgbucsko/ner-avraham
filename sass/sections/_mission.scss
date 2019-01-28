@@ -7,8 +7,7 @@
     padding: 8rem 15rem;
     display: flex;
     flex-direction: column;
-    -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
-    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+    @include arrowClip;
 
     .heading-secondary {
         width: 100%;
@@ -35,7 +34,7 @@
             padding: 2rem;
             background-color: $color-dark-gray-1;
             border-radius: 50%;
-            box-shadow: 0 0 .5rem 2px rgba(#000, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
             margin-bottom: 1rem;
         }
 

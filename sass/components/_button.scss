@@ -1,23 +1,26 @@
 .btn {
-    &:link,
-    &:visited {
-      color: $color-primary-light;
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 400;
-      letter-spacing: 1px;
-      padding: .8rem 0;
-      border-bottom: 2px solid $color-primary-light;
-      transition: all .4s;
-    }
+    color: $color-primary-light;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: .8rem 0;
+    border-bottom: 2px solid $color-primary-light;
+    transition: all .4s;
   
     &:hover {
       transform: translateY(-3px);
       text-shadow: 0 0 2rem $color-secondary, 0 0 3rem $color-secondary, 0 0 4rem $color-secondary, 0 0 5rem $color-secondary, 0 0 6rem $color-secondary;
+      cursor: pointer;
     }
 
     &:active {
       transform: translateY(0);
+    }
+
+    &--donate {
+      border-bottom: none;
+      text-align: center;
     }
   }

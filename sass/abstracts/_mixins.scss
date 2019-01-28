@@ -1,0 +1,4 @@
+@mixin arrowClip {
+    -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+}

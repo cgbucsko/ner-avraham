@@ -1,0 +1,50 @@
+.section-wrapper--donate {
+    background: $color-dark-gray-1;
+}
+
+.section-donate {
+    background-color: $color-light-gray-1;
+    padding: 8rem 15rem;
+    @include arrowClip;
+}
+
+.donate-text {
+    padding: 8rem 0;
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    background: $color-dark-gray-1;
+    padding: 4rem;
+    margin: 4rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+    & > * {
+        flex: 1 1 0;
+    }
+
+    &__title {
+        color: $color-primary-light;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        color: $color-light-gray-1;
+        padding: 2rem;
+    }
+
+    &__amount {
+        color: #f3e10b;
+        font-size: 6rem;
+        text-align: center;
+    }
+}

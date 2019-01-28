@@ -5,14 +5,10 @@
 }
 
 .photo-container {
-    width: 25vw;
+    width: 100%;
     height: 33vh;
     overflow: hidden;
     background-color: #000;
-
-    // &:hover & > * {
-    //     opacity: 1;
-    // }
 }
 
 .testimonials-photo {
@@ -21,6 +17,7 @@
     opacity: 0.5;
     transform: scale(1.15);
     transition: all .2s;
+    // overflow: hidden;
 
     &:hover {
         transform: scale(1);
@@ -52,7 +49,7 @@
     color: white;
     visibility: hidden;
     opacity: 0;
-    transition: all .2s;
+    transition: all .3s;
     font-size: 4rem;
     font-weight: 300;
     text-align: center;
