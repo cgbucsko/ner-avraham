@@ -1,0 +1,17 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    .main-nav {
+        margin-top: 0;
+        background: rgba(#000000, .9);
+
+        .link {
+            font-size: 1.6rem;
+            padding: 1.8rem 0;
+        }
+    }
+}

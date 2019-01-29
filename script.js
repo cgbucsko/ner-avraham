@@ -10,3 +10,17 @@ function handleClickLink(event) {
 document.querySelectorAll('.link').forEach(el => {
     el.addEventListener('click', handleClickLink);
 });
+
+let waypoint = new Waypoint({
+    element: document.getElementById('mission'),
+    handler: function(direction) {
+        const nav = document.getElementById('nav');
+        if (direction === 'down') {
+            nav.classList.add('sticky');
+            console.log('waypoint hit');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    },
+    offset: 65
+});
