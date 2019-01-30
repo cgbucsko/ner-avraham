@@ -75,6 +75,10 @@ body {
   letter-spacing: 0.3rem;
   text-align: center;
 }
+.heading-secondary--dark {
+  color: #f3a70b;
+  text-shadow: 0 0.5rem 2rem #303030, 0 0.5rem 3rem #303030, 0.5rem 0 4rem #303030, 0.5rem 0 5rem #303030;
+}
 
 .btn {
   color: #f6b93b;
@@ -121,23 +125,25 @@ body {
 }
 
 .section-donate {
-  background-color: #fcfcfc;
-  padding: 8rem 15rem;
+  background-image: linear-gradient(to right bottom, rgba(246, 185, 59, 0.4), rgba(243, 167, 11, 0.4)), url(../../img/sunset.jpg);
+  background-size: cover;
+  padding: 10rem 15rem;
   -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
   clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .donate-text {
-  padding: 8rem 0;
+  padding: 4rem 0;
   font-size: 2rem;
 }
 
 .card-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .card {
-  flex: 1 1 0;
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
   background: #303030;
@@ -146,22 +152,47 @@ body {
   border-radius: 2rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
-.card > * {
-  flex: 1 1 0;
-}
 .card__title {
+  flex-basis: 20%;
   color: #f6b93b;
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
 }
 .card__description {
+  flex-basis: 35%;
   color: #fcfcfc;
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border-top: 1px solid #f3a70b;
+  border-bottom: 1px solid #f3a70b;
 }
 .card__amount {
+  flex-basis: 35%;
   color: #f3e10b;
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
+}
+.card__btn {
+  align-self: center;
+  background: #f6b93b;
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.card__btn:hover {
+  transform: translateY(-3px);
+  background: #f3a70b;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+}
+.card__btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .header {
@@ -217,7 +248,7 @@ body {
 
 .section-mission {
   background-color: #fcfcfc;
-  padding: 8rem 15rem;
+  padding: 10rem 15rem;
   display: flex;
   flex-direction: column;
   -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
@@ -287,7 +318,7 @@ body {
 
 .section-schedule {
   background-color: #303030;
-  padding: 7rem;
+  padding: 10rem 7rem;
 }
 
 .schedule-grid {
@@ -384,17 +415,19 @@ body {
 
 .photo-container {
   width: 100%;
-  height: 33vh;
+  height: 100%;
   overflow: hidden;
   background-color: #000;
 }
 
 .testimonials-photo {
+  object-fit: cover;
   width: 100%;
   height: auto;
   opacity: 0.5;
   transform: scale(1.15);
   transition: all 0.2s;
+  overflow: hidden;
 }
 .testimonials-photo:hover {
   transform: scale(1);

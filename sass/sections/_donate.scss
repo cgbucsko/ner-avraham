@@ -3,22 +3,30 @@
 }
 
 .section-donate {
-    background-color: $color-light-gray-1;
-    padding: 8rem 15rem;
+    // background-color: $color-light-gray-1;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.4),
+        rgba($color-primary-dark, 0.4)
+    ),
+    url(../../img/sunset.jpg);
+    background-size: cover;
+    padding: 10rem 15rem;
     @include arrowClip;
 }
 
 .donate-text {
-    padding: 8rem 0;
+    padding: 4rem 0;
     font-size: 2rem;
 }
 
 .card-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .card {
-    flex: 1 1 0;
+    flex-basis: 25%;
     display: flex;
     flex-direction: column;
     background: $color-dark-gray-1;
@@ -27,24 +35,56 @@
     border-radius: 2rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
-    & > * {
-        flex: 1 1 0;
+    &__item {
+        // height: 25%;
     }
 
     &__title {
+        flex-basis: 20%;
         color: $color-primary-light;
-        font-size: 2rem;
-        text-transform: uppercase;
+        font-size: 5rem;
+        text-align: center;
+        // text-transform: uppercase;
     }
 
     &__description {
+        flex-basis: 35%;
         color: $color-light-gray-1;
-        padding: 2rem;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        border-top: 1px solid $color-primary-dark;
+        border-bottom: 1px solid $color-primary-dark;
     }
 
     &__amount {
-        color: #f3e10b;
-        font-size: 6rem;
+        flex-basis: 35%;
+        color: $color-yellow;
+        font-size: 5rem;
         text-align: center;
+    }
+
+    &__btn {
+        align-self: center;
+        background: $color-primary-light;
+        width: fit-content;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-3px);
+            background: $color-primary-dark;
+            box-shadow: 0 1rem 2rem rgba(#000, .35);
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
     }
 }

@@ -28,7 +28,7 @@
             <h1 class="heading-primary">Ner Avraham</h1>
         </div>
         <div class="header__btn">
-            <p class="btn">Become a partner</p>
+            <p class="btn link" data-block="donate">Lend a hand</p>
         </div>        
     </header>
 
@@ -82,7 +82,7 @@
         </div>
         
         <div class="section-wrapper--schedule">
-            <section class="section-schedule" id="schedule">
+            <section data-aos="zoom-in" class="section-schedule" id="schedule">
                 <h2 class="heading-secondary">&mdash; A day in the life &mdash;</h2> 
                 <div class="schedule-grid">
                     <p data-aos="fade-right" class="sch sch__time sch__time--1 row--a">9:30 - 10:10</p>
@@ -110,7 +110,7 @@
 
         <section class="section-testimonials">
             <div class="photo-container">
-                <img src="./img/sample1.jpg" alt="sample" class="testimonials-photo">
+                <img src="./img/sample1.jpg" width="380" height="293" alt="sample" class="testimonials-photo">
                 <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>I look forward to learning with my chavrusa every day!</p>
             </div>
             <div class="photo-container">
@@ -132,7 +132,7 @@
                 <img src="./img/sample6.jpg" alt="sample" class="testimonials-photo">
             </div>
             <div class="photo-container">
-                <img src="./img/sample7.jpg" alt="sample" class="testimonials-photo">
+                <img src="./img/sample7.jpg" width="380" height="293" alt="sample" class="testimonials-photo">
             </div>
             <div class="photo-container">
                 <img src="./img/sample8.jpg" alt="sample" class="testimonials-photo">
@@ -141,34 +141,40 @@
 
         <div class="section-wrapper--donate">
             <section class="section-donate" id="donate">
-                <h2 class="heading-secondary">&mdash; Become a supporter &mdash;</h2>
+                <h2 data-aos="zoom-in" class="heading-secondary heading-secondary--dark">&mdash; Become a supporter &mdash;</h2>
                 <p class="donate-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div class="card-container">
-                    <div class="card">
-                        <h4 class="card__title">Sponsor an Avreich</h4>
-                        <p class="card__description">
+                    <div data-aos="flip-right" class="card">
+                        <div class="card__item card__title">
+                            <ion-icon name="person"></ion-icon>
+                        </div>
+                        <p class="card__item card__description">
                             Sponsor one of our kollel members for one month of Torah learning
                         </p>
-                        <p class="card__amount">$1000</p>
-                        <p class="btn btn--donate">Select</p>
+                        <p class="card__item card__amount">$1000</p>
+                        <p class="card__item card__btn">Donate now</p>
                     </div>
-                    <div class="card">
-                        <h4 class="card__title">Sponsor a day of classes</h4>
-                        <p class="card__description">
+                    <div data-aos="flip-right" data-aos-delay="100" class="card">
+                        <div class="card__item card__title">
+                            <ion-icon name="calendar"></ion-icon>
+                        </div>                        
+                        <p class="card__item card__description">
                             Dedicate a full morning of classes for the community
                         </p>
-                        <p class="card__amount">$180</p>
-                        <p class="btn btn--donate">Select</p>
+                        <p class="card__item card__amount">$180</p>
+                        <p class="card__item card__btn">Donate now</p>
                     </div>
-                    <div class="card">
-                        <h4 class="card__title">Choose your own amount</h4>
-                        <p class="card__description">
-                            Sponsor one of our kollel members for one month of Torah learning
+                    <div data-aos="flip-right" data-aos-delay="200" class="card">
+                        <div class="card__item card__title">
+                            <ion-icon name="cash"></ion-icon>
+                        </div>                        
+                        <p class="card__item card__description">
+                            Choose your own amount to donate &mdash; every dollar goes to growth in Torah!
                         </p>
-                        <p class="card__amount">$1000</p>
-                        <p class="btn btn--donate">Select</p>
+                        <p class="card__item card__amount"></p>
+                        <p class="card__item card__btn">Donate now</p>
                     </div>
                 </div>
             </section>
