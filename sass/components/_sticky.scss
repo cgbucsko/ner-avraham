@@ -7,9 +7,11 @@
 
     .main-nav {
         margin-top: 0;
-        background: rgba(#000000, .9);
+        background: rgba(#fff, .96);
+        box-shadow: 0 1rem 2rem rgba(#000, .15);
 
         .link {
+            color: black;
             font-size: 1.6rem;
             padding: 1.8rem 0;
         }
