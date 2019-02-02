@@ -122,8 +122,72 @@ body {
   padding: 1.8rem 0;
 }
 
+.section-contact {
+  background: #fcfcfc;
+  padding: 10rem 15rem;
+}
+
+.contact-box {
+  display: flex;
+  padding: 5rem 1rem;
+}
+.contact-box__map {
+  margin: 0 2rem;
+  border: 3px solid #f3a70b;
+  width: fit-content;
+  margin-right: 2rem;
+}
+.contact-box__details {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-box__title {
+  color: #f3a70b;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.contact-box__text {
+  padding: 1rem 2rem;
+}
+.contact-box__contact {
+  border-top: 1px solid #f3a70b;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.contact-box__phone {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.contact-box__email {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.contact-box__icon {
+  color: #f3a70b;
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+.contact-box__link {
+  padding: none;
+  text-decoration: none;
+  color: #f3a70b;
+  border-bottom: 1px solid #f3a70b;
+  transition: all 0.2s;
+}
+.contact-box__link:hover {
+  transform: translateY(-2px);
+}
+.contact-box__link:active {
+  transform: translateY(0);
+}
+
 .section-wrapper--donate {
-  background: #303030;
+  background: #fcfcfc;
 }
 
 .section-donate {
