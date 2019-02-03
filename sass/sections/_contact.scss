@@ -1,6 +1,11 @@
+.section-wrapper--contact {
+    background: $color-dark-gray-1;
+}
+
 .section-contact {
     background: $color-light-gray-1;
     padding: 10rem 15rem;
+    @include arrowClip;
 }
 
 

@@ -122,9 +122,15 @@ body {
   padding: 1.8rem 0;
 }
 
+.section-wrapper--contact {
+  background: #303030;
+}
+
 .section-contact {
   background: #fcfcfc;
   padding: 10rem 15rem;
+  -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
+  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .contact-box {
@@ -187,16 +193,10 @@ body {
   transform: translateY(0);
 }
 
-.section-wrapper--donate {
-  background: #fcfcfc;
-}
-
 .section-donate {
   background-image: linear-gradient(to right bottom, rgba(246, 185, 59, 0.4), rgba(243, 167, 11, 0.4)), url(../../img/sunset.jpg);
   background-size: cover;
   padding: 10rem 15rem;
-  -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
-  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 }
 
 .donate-text {
@@ -240,8 +240,10 @@ body {
   font-size: 5rem;
   text-align: center;
 }
-.card__btn {
+.card__form {
   align-self: center;
+}
+.card__btn {
   background: #f6b93b;
   width: fit-content;
   padding: 1rem 2rem;
@@ -251,6 +253,10 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #303030;
   transition: all 0.2s;
 }
 .card__btn:hover {
@@ -261,6 +267,10 @@ body {
 .card__btn:active {
   transform: translateY(0);
   box-shadow: none;
+  outline: none;
+}
+.card__btn:focus {
+  outline: none;
 }
 .card__input {
   border: none;
@@ -275,6 +285,28 @@ body {
 
 .footer {
   background: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__copyright {
+  color: #fcfcfc;
+  align-self: flex-end;
+  margin-top: 5rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+.footer__copyright--orange {
+  color: #f6b93b;
+}
+
+.logo {
+  margin-top: 4rem;
+  width: 10rem;
+  height: auto;
+  background: #f3a70b;
+  border-radius: 50%;
 }
 
 .header {
@@ -306,6 +338,9 @@ body {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+}
+.main-nav__logo {
+  height: 1rem;
 }
 .main-nav .link {
   text-decoration: none;

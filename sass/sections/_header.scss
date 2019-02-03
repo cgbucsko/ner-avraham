@@ -37,6 +37,10 @@
   display: flex;
   justify-content: flex-end;
 
+  &__logo {
+    height: 1rem;
+  }
+
   .link {
     text-decoration: none;
     margin-right: 5rem;
