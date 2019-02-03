@@ -110,32 +110,36 @@
 
         <section class="section-testimonials">
             <div class="photo-container">
-                <img src="./img/sample1.jpg" width="380" height="293" alt="sample" class="testimonials-photo">
+                <img src="./img/1.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
                 <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>I look forward to learning with my chavrusa every day!</p>
             </div>
             <div class="photo-container">
-                <img src="./img/sample2.jpg" alt="sample" class="testimonials-photo">
-                <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>Ner Avraham changed my life.</p>
+                <img src="./img/2.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>It doesn't get better!</p>
             </div>
             <div class="photo-container">
-                <img src="./img/sample3.jpg" alt="sample" class="testimonials-photo">
-                <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>I find the kollel members to be a great source of inspiration.</p>
+                <img src="./img/3.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>I found a 'soft landing' to extend my learning to stronger levels.<br>Thanks everyone!</p>
             </div>
             <div class="photo-container">
-                <img src="./img/sample4.jpg" alt="sample" class="testimonials-photo">
+                <img src="./img/4.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote">Be welcomed by friendly faces</p>
+            </div>
+            <div class="photo-container">
+                <img src="./img/5.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote">The world of Torah is open to you</p>
+            </div>
+            <div class="photo-container">
+                <img src="./img/6.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
                 <p class="testimonials__quote"><span class="quote-mark">&ldquo;</span>I’m so happy that I’ve joined!</p>
             </div>
             <div class="photo-container">
-                <img src="./img/sample5.jpg" alt="sample" class="testimonials-photo">
+                <img src="./img/7.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote">Personal attention &mdash; we're here for you!</p>
             </div>
             <div class="photo-container">
-                <img src="./img/sample6.jpg" alt="sample" class="testimonials-photo">
-            </div>
-            <div class="photo-container">
-                <img src="./img/sample7.jpg" width="380" height="293" alt="sample" class="testimonials-photo">
-            </div>
-            <div class="photo-container">
-                <img src="./img/sample8.jpg" alt="sample" class="testimonials-photo">
+                <img src="./img/8.jpg" width="380" height="293" alt="kollel-photo" class="testimonials-photo">
+                <p class="testimonials__quote">Achieve the growth you've been seeking</p>
             </div>
         </section>
 
@@ -174,7 +178,12 @@
                             Choose your own amount to donate &mdash; every dollar goes to growth in Torah!
                         </p>
                         <p class="card__item card__amount"></p>
-                        <p class="card__item card__btn">Donate now</p>
+                        <!-- <p class="card__item card__btn">Donate now</p> -->
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"  class="card__item card__btn">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="5VTQ4V8CNSBZL" />
+                            <input class="card__item card__input" type="submit" value="Donate now" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                        </form>
                     </div>
                 </div>
             </section>
@@ -189,22 +198,24 @@
                     <p data-aos="fade-left" class="contact-box__title">Address</p>
                     <p data-aos="fade-left" class="contact-box__text">HaKeren HaKayemet Le-Israel St 59,<br>Shaarei Chesed, Jerusalem. Israel. 91070</p>
                     <p data-aos="fade-left" class="contact-box__title">Directions</p>
-                    <p data-aos="fade-left" class="contact-box__text">Enter our Kollel from ground level on either of our two entrances: HaKeren HaKayemet Le-Israel street or from Ha-Kalir Street. ​The Kollel is located below the Beit Zvul Shul.</p>
-                    <div class="contact-box__contact">
-                        <div data-aos="fade-left" class="contact-box__phone">
+                    <p data-aos="fade-left" class="contact-box__text">Enter our Kollel from ground level on either of our two entrances: HaKeren HaKayemet Le-Israel street or from Ha-Kalir Street.<br>​The Kollel is located below the Beit Zvul Shul.</p>
+                    <div data-aos="fade-left" class="contact-box__contact">
+                        <div class="contact-box__phone">
                             <ion-icon name="call" class="contact-box__icon"></ion-icon>
                             <p>058-321-5961</p>
                         </div>
-                        <div data-aos="fade-left" class="contact-box__email">
+                        <div class="contact-box__email">
                             <ion-icon name="mail" class="contact-box__icon"></ion-icon>
                             <a href="mailto: kollelneravraham@gmail.com" class="contact-box__link">kollelneravraham@gmail.com</a>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            
         </section>
+
+        <footer class="footer">
+
+        </footer>
         
 
     </main>

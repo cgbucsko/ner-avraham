@@ -6,7 +6,7 @@
 
 .photo-container {
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     background-color: #000;
 }
@@ -16,12 +16,12 @@
     width: 100%;
     height: auto;
     opacity: 0.5;
-    transform: scale(1.15);
+    transform: scale(1.2);
     transition: all .2s;
     overflow: hidden;
 
     &:hover {
-        transform: scale(1);
+        transform: scale(1.08);
         opacity: 1;
     }
 
@@ -48,6 +48,7 @@
     transform: translate(-50%, -50%);
     z-index: 100;
     color: white;
+    text-shadow: 0 2rem 2rem rgba(#000, .35);
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
