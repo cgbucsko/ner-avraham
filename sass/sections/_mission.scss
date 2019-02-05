@@ -4,7 +4,7 @@
 
 .section-mission {
     background-color: $color-light-gray-1;
-    padding: 10rem 15rem;
+    padding: 10rem 15rem 5rem 15rem;
     display: flex;
     flex-direction: column;
     @include arrowClip;
@@ -46,12 +46,13 @@
     }
 
     .info-box {
-        display: grid;
-        grid-template: 50% 50% / 50% 50%;
-        grid-template-areas:
-            "p1 video"
-            "p2 video";
+        display: flex;
+        flex-direction: column;
         padding-bottom: 10rem;
+
+        &__video {
+            display: flex;
+        }
     }
 
     .p {
@@ -59,13 +60,21 @@
         font-size: 2rem;
         padding: 0 5rem;
 
+        &__first-letter {
+            color: $color-primary-light;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
         &--1 {
-            grid-area: p1;
+            flex: 0 0 50%;
             margin-bottom: 3rem;
+            align-self: center;
         }
 
         &--2 {
-            grid-area: p2;
+            text-align: center;
+            padding: 6rem 15rem 0 15rem;
         }
     }
     
