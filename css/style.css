@@ -653,6 +653,11 @@ body {
   display: grid;
   grid-template: 1fr 1fr/repeat(4, 1fr);
 }
+@media (max-width: 900px) {
+  .section-testimonials {
+    grid-template: repeat(4, 1fr)/1fr 1fr;
+  }
+}
 
 .photo-container {
   width: 100%;
@@ -669,6 +674,12 @@ body {
   transform: scale(1.2);
   transition: all 0.4s;
   overflow: hidden;
+}
+@media (max-width: 900px) {
+  .testimonials-photo {
+    opacity: 1;
+    transform: scale(1.08);
+  }
 }
 .testimonials-photo:hover {
   transform: scale(1.08);

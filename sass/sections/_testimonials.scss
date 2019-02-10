@@ -2,6 +2,10 @@
     position: relative;
     display: grid;
     grid-template: 1fr 1fr/ repeat(4, 1fr);
+
+    @media (max-width: 900px) {
+        grid-template: repeat(4, 1fr) / 1fr 1fr;
+      }
 }
 
 .photo-container {
@@ -19,6 +23,11 @@
     transform: scale(1.2);
     transition: all .4s;
     overflow: hidden;
+
+    @media (max-width: 900px) {
+        opacity: 1;
+        transform: scale(1.08);
+      }
 
     &:hover {
         transform: scale(1.08);
