@@ -1,5 +1,4 @@
 .section-donate {
-    // background-color: $color-light-gray-1;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.4),
@@ -8,16 +7,35 @@
     url(../../img/sunset.jpg);
     background-size: cover;
     padding: 10rem 15rem;
+
+    @media (max-width: 900px) {
+        padding: 8rem 7rem;
+    }
+
+    @media (max-width: 550px) {
+        padding: 6rem 2rem;
+    }
 }
 
 .donate-box {
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas:
+        "p1 photo"
+        "p2 photo";
     padding-top: 5rem;
     padding-bottom: 2rem;
-}
 
-.donate-text-box {
-    flex-basis: 66%;
+    @media (max-width: 900px) {
+        grid-template-areas:
+            "p1 photo"
+            "p2 p2";
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .donate-text {
@@ -35,23 +53,52 @@
         font-size: 1.6rem;
     }
 
+    &--1 {
+        grid-area: p1;
+
+        @media (max-width: 900px) {
+            align-self: center;
+        }
+
+        @media (max-width: 600px) {
+            text-align: center;
+        }
+    }
+
+    &--2 {
+        grid-area: p2;
+
+        @media (max-width: 900px) {
+            padding-top: 2rem;
+            text-align: center;
+        }
+    }
+
     &:not(:last-child) {
         padding-bottom: 2rem;
     }
 }
 
 .donate-photo {
-    flex-basis: 37%;
+    grid-area: photo;
     align-self: center;
     overflow: hidden;
     width: 100%;
     border-radius: .4rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+    @media (max-width: 900px) {
+        widows: 70%;
+      }
 }
 
 .card-container {
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: 650px) {
+        flex-direction: column;
+    }
 }
 
 .card {
@@ -64,8 +111,11 @@
     border-radius: 2rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
+    @media (max-width: 650px) {
+        margin: 1rem;
+    }
+
     &__item {
-        // height: 25%;
     }
 
     &__title {
@@ -73,7 +123,6 @@
         color: $color-primary-light;
         font-size: 5rem;
         text-align: center;
-        // text-transform: uppercase;
     }
 
     &__description {
