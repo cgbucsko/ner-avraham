@@ -9,6 +9,14 @@
 html {
   // Defines what 1rem is
   font-size: 62.5%;
+
+  @media (max-width: 1220px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 45%;
+  }
 }
 
 body {

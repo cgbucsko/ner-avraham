@@ -17,8 +17,7 @@
 }
 
 .donate-text-box {
-    // display: flex;
-    // justify-content: space-between;
+    flex-basis: 66%;
 }
 
 .donate-text {
@@ -42,9 +41,10 @@
 }
 
 .donate-photo {
-    width: 50%;
-    height: 50%;
-    // border: 3px solid $color-dark-gray-1;
+    flex-basis: 37%;
+    align-self: center;
+    overflow: hidden;
+    width: 100%;
     border-radius: .4rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 }

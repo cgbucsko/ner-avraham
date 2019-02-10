@@ -9,6 +9,10 @@
     flex-direction: column;
     @include arrowClip;
 
+    @media (max-width: 900px) {
+        padding: 8rem 5rem 3rem 5rem;
+    }
+
     .heading-secondary {
         width: 100%;
     }
@@ -21,10 +25,18 @@
             display: flex;
             justify-content: space-around;
 
-            & > * {
-                flex: 1 1 0;
-                text-align: center;
-                align-items: center;
+            @media (max-width: 500px) {
+                flex-direction: column;
+            }
+        }
+
+        &__item {
+            flex: 1 1 0;
+            text-align: center;
+            align-items: center;
+
+            @media (max-width: 500px) {
+                display: flex;
             }
         }
 
@@ -42,6 +54,16 @@
             padding: 0 20%;
             font-size: 2rem;
             font-weight: 500;
+
+            @media (max-width: 700px) {
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+
+            @media (max-width: 500px) {
+                padding-left: 3rem;
+                text-align: start;
+            }
         }
     }
 
@@ -52,6 +74,10 @@
 
         &__video {
             display: flex;
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+              }
         }
     }
 
@@ -70,11 +96,20 @@
             flex: 0 0 50%;
             margin-bottom: 3rem;
             align-self: center;
+
+            @media (max-width: 900px) {
+                text-align: center;
+              }
         }
 
         &--2 {
             text-align: center;
             padding: 6rem 15rem 0 15rem;
+
+            @media (max-width: 900px) {
+                margin-top: 4rem;
+                padding: 0 5rem;
+              }
         }
     }
     

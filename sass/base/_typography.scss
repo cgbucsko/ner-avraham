@@ -27,8 +27,12 @@ body {
     letter-spacing: .3rem;
     text-align: center;
 
+    @media (max-width: 430px) {
+        font-size: 2.5rem;
+    }
+
     &--dark {
-        color: $color-primary-dark;
-        text-shadow: 0 .5rem 2rem $color-dark-gray-1, 0 .5rem 3rem $color-dark-gray-1, .5rem 0 4rem $color-dark-gray-1, .5rem 0 5rem $color-dark-gray-1;
+        color: $color-primary-light;
+        text-shadow: 0 .5rem 2rem $color-dark-gray-1, 0 .5rem 3rem $color-dark-gray-1;
     }
 }
