@@ -9,8 +9,14 @@
 .section-schedule {
     background-color: $color-dark-gray-1;
     padding: 10rem 7rem;
-    // -webkit-clip-path: polygon(100% 0, 100% 91%, 50% 100%, 0 91%, 0 0);
-    // clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+
+    @media (max-width: 1300px) {
+        padding: 8rem 4rem;
+      }
+
+      @media (max-width: 600px) {
+        padding: 6rem 1rem;
+      }
 }
 
 .schedule-grid {
@@ -27,11 +33,18 @@
         "t5 mincha mincha"
         "t6 . gemara"
         "t7 empty mussar";
-    // grid-gap: 1.5rem;
     justify-content: center;
     text-align: center;
 
     color: $color-light-gray-1;
+
+    @media (max-width: 1300px) {
+        padding: 4rem 8rem;
+      }
+
+      @media (max-width: 600px) {
+        padding: 3rem 4rem;
+      }
 }
 
 .row--a {

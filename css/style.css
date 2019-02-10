@@ -541,6 +541,16 @@ body {
   background-color: #303030;
   padding: 10rem 7rem;
 }
+@media (max-width: 1300px) {
+  .section-schedule {
+    padding: 8rem 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .section-schedule {
+    padding: 6rem 1rem;
+  }
+}
 
 .schedule-grid {
   padding: 4rem 20%;
@@ -551,6 +561,16 @@ body {
   justify-content: center;
   text-align: center;
   color: #fcfcfc;
+}
+@media (max-width: 1300px) {
+  .schedule-grid {
+    padding: 4rem 8rem;
+  }
+}
+@media (max-width: 600px) {
+  .schedule-grid {
+    padding: 3rem 4rem;
+  }
 }
 
 .row--a {
