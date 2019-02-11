@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "stripe": "^6.23.1",
     "waypoints": "^4.0.1"
   }
 }

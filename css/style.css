@@ -133,9 +133,17 @@ body {
   z-index: 9999;
 }
 .sticky .main-nav {
+  position: relative;
   margin-top: 0;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.sticky .main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  visibility: visible;
+  height: 6rem;
 }
 .sticky .main-nav .link {
   color: black;
@@ -440,11 +448,8 @@ body {
 }
 
 .logo {
-  margin-top: 4rem;
-  width: 10rem;
+  width: 30rem;
   height: auto;
-  background: #f3a70b;
-  border-radius: 50%;
 }
 
 .header {
@@ -475,10 +480,10 @@ body {
   animation-fill-mode: backwards;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
 }
 .main-nav__logo {
-  height: 1rem;
+  visibility: hidden;
+  height: 1px;
 }
 .main-nav .link {
   text-decoration: none;
@@ -490,6 +495,9 @@ body {
   color: white;
   border-bottom: 2px solid transparent;
   transition: all 0.3s;
+}
+.main-nav .link--logo {
+  flex: 1;
 }
 .main-nav .link:hover {
   color: #f6b93b;

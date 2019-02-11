@@ -18,9 +18,9 @@
     <header class="header">
         <nav id="nav">
             <ul class="main-nav">
-                <!-- <li class="main-nav__logo">
-                    <img src="./img/logo.png" alt="logo">
-                </li> -->
+                <li class="link--logo">
+                    <img src="./img/logo-black.png" alt="logo" class="main-nav__logo">
+                </li>
                 <li class="link" data-block="mission">Our Mission</a>
                 <li class="link" data-block="schedule">Schedule</a>
                 <li class="link" data-block="donate">Donate</a>
@@ -171,11 +171,22 @@
                         Sponsor one of our kollel members for one month of Torah learning
                     </p>
                     <p class="card__item card__amount">$1000</p>
-                    <form class="card__item card__form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <!-- <form class="card__item card__form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick" />
                         <input type="hidden" name="hosted_button_id" value="5VTQ4V8CNSBZL" />
                         <input class="card__item card__btn" type="submit" value="Donate now" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    </form>
+                    </form> -->
+                    <form action="your-server-side-code" method="POST" class="card__item card__form">
+                        <script
+                          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="pk_test_aka16nqLkLGiuO0sSQTNcdCd"
+                          data-amount="100000"
+                          data-name="Ner Avraham, Inc"
+                          data-description="Sponsor a kollel member"
+                          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                          data-locale="auto">
+                        </script>
+                      </form>
                 </div>
                 <div data-aos="flip-right" data-aos-delay="100" class="card">
                     <div class="card__item card__title">
@@ -242,7 +253,7 @@
     </main>
 
     <footer class="footer">
-        <img src="./img/logo.png" alt="logo" class="logo">
+        <img src="./img/logo-yellow.png" alt="logo" class="logo">
         <p class="footer__copyright">Copyright &copy; by <span class="footer__copyright--orange">CG Bucsko</span> 2019</p>
     </footer>
 

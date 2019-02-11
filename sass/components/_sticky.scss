@@ -6,9 +6,18 @@
     z-index: 9999;
 
     .main-nav {
+        position: relative;
         margin-top: 0;
         background: rgba(#fff, .96);
         box-shadow: 0 1rem 2rem rgba(#000, .15);
+
+        &__logo {
+            position: absolute;
+            top: 0;
+            left: 3rem;
+            visibility: visible;
+            height: 6rem;
+        }
 
         .link {
             color: black;
