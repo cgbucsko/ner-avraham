@@ -1,0 +1,8 @@
+    Shared Plan:        Baby
+    Your Control Panel: https://gator4035.hostgator.com:2083
+    Username:           neravraham
+    Domain:             neravraham.org
+    Password:           gey/DXB2yMts
+    1st Nameserver:     ns8069.hostgator.com
+    2nd Nameserver:     ns8070.hostgator.com
+    Server IP:          192.185.4.46
