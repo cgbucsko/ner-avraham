@@ -35,10 +35,14 @@
   animation-fill-mode: backwards;
   list-style: none;
   display: flex;
-  // justify-content: flex-end;
+
+  @media (max-width: 570px) {
+    justify-content: space-around;
+    padding: 0;
+  }
 
   &__logo {
-    visibility: hidden;
+    display: none;
     height: 1px;
   }
 
@@ -53,8 +57,17 @@
     border-bottom: 2px solid transparent;
     transition: all 0.3s;
 
+    @media (max-width: 570px) {
+      font-size: 1rem;
+      margin-right: 0;
+    }
+
     &--logo {
       flex: 1;
+
+      @media (max-width: 570px) {
+        display: none;
+      }
     }
 
     &:hover {

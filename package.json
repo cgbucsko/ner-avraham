@@ -1,7 +1,7 @@
 {
   "name": "ner-avraham",
   "version": "1.0.0",
-  "description": "Webpage for Kollel Ner AVraham",
+  "description": "Webpage for Kollel Ner Avraham",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
