@@ -122,6 +122,36 @@ body {
   text-align: center;
 }
 
+.dbox-donation-button {
+  text-decoration: none;
+  background: #f6b93b;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #303030;
+  transition: all 0.2s;
+}
+.dbox-donation-button:hover {
+  transform: translateY(-3px);
+  background: #f3a70b;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+}
+.dbox-donation-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+  outline: none;
+}
+.dbox-donation-button:focus {
+  outline: none;
+}
+
 .hr {
   height: 1px;
   margin: 4rem 20rem;
@@ -393,35 +423,7 @@ body {
 }
 .card__form {
   align-self: center;
-}
-.card__btn {
-  background: #f6b93b;
-  width: fit-content;
-  padding: 1rem 2rem;
   margin-top: 1rem;
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #303030;
-  transition: all 0.2s;
-}
-.card__btn:hover {
-  transform: translateY(-3px);
-  background: #f3a70b;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
-}
-.card__btn:active {
-  transform: translateY(0);
-  box-shadow: none;
-  outline: none;
-}
-.card__btn:focus {
-  outline: none;
 }
 .card__input {
   border: none;
