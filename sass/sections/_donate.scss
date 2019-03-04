@@ -43,9 +43,20 @@
     font-size: 2rem;
     color: $color-light-gray-1;
 
+    @media (max-width: 500px) {
+        padding: 0 1rem;
+    }
+
     &--bold {
         color: $color-primary-light;
         font-weight: 700;
+    }
+
+    &--yellow {
+        width: 100%;
+        color: $color-primary-light;
+        text-align: center;
+        font-size: 1.6rem;
     }
 
     &--white {

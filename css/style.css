@@ -40,6 +40,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media (max-width: 1220px) {
   html {
@@ -183,6 +184,12 @@ body {
   font-size: 1.6rem;
   padding: 1.8rem 0;
 }
+@media (max-width: 500px) {
+  .sticky .main-nav .link {
+    font-size: 1.2rem;
+    padding: 1.8rem 0.5rem;
+  }
+}
 
 .section-wrapper--contact {
   background: #303030;
@@ -325,9 +332,20 @@ body {
   font-size: 2rem;
   color: #fcfcfc;
 }
+@media (max-width: 500px) {
+  .donate-text {
+    padding: 0 1rem;
+  }
+}
 .donate-text--bold {
   color: #f6b93b;
   font-weight: 700;
+}
+.donate-text--yellow {
+  width: 100%;
+  color: #f6b93b;
+  text-align: center;
+  font-size: 1.6rem;
 }
 .donate-text--white {
   width: 100%;
