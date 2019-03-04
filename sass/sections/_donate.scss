@@ -97,6 +97,7 @@
 .card-container {
     display: flex;
     justify-content: space-around;
+    position: relative;
 
     @media (max-width: 650px) {
         flex-direction: column;
@@ -115,6 +116,8 @@
 
     @media (max-width: 650px) {
         margin: 1rem;
+        width: 70%;
+        align-self: center;
     }
 
     &__title {
